@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Catalogue</title>
+</head>
+<body>
+        
+        <form
+        action="#"
+        th:action="@{/search}"
+        th:object="${book}"
+        method="GET"
+        >    
+            <h1>Search for books: </h1>
+            <p><input type="text" name="search" id="search"/></p>
+            <p>
+                <input type="submit" name="searchAuthor" value="Search By Author">
+                <input type="submit" name="searchTitle" value="Search By Title">
+                <input type="submit" name="searchId" value="Search By Id">
+            </p>
+            <br>
+            <p>
+                <input type="submit" name="getAllBooks" value="Browse All Books">
+            </p>
+
+        </form>
+    </div>
+</body>
+</html>
