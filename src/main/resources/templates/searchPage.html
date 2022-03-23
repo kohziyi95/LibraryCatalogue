@@ -22,11 +22,15 @@
                 <input type="submit" name="searchId" value="Search By Id">
             </p>
             <br>
-            <p>
-                <input type="submit" name="getAllBooks" value="Browse All Books">
-            </p>
-
         </form>
+        <form action="#"
+        th:action="@{/search}"
+        method="GET">
+        <p>
+            <input type="submit" name="getAllBooks" value="Browse All Books">
+        </p>
+        </form>
+        
     </div>
 </body>
 </html>
